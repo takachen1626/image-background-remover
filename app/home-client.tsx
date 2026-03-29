@@ -191,9 +191,9 @@ export default function HomeClient() {
           <span className="font-semibold text-white/80 text-sm tracking-wide">BgRemover</span>
         </div>
         <div className="flex items-center gap-8 text-sm">
-          <span className="text-white/40 hover:text-white/70 cursor-pointer transition">Features</span>
-          <Link href="/pricing" className="text-white/40 hover:text-white/70 cursor-pointer transition">Pricing</Link>
-          <span className="text-white/40 hover:text-white/70 cursor-pointer transition">Docs</span>
+          <Link href="/features" className="text-white/40 hover:text-white/70 transition">Features</Link>
+          <Link href="/pricing" className="text-white/40 hover:text-white/70 transition">Pricing</Link>
+          <Link href="/docs" className="text-white/40 hover:text-white/70 transition">Docs</Link>
           {session ? (
             <Link href="/dashboard" className="flex items-center gap-2 group">
               {session.user?.image ? (
