@@ -1,0 +1,281 @@
+{
+  "nav": {
+    "brand": "BgRemover",
+    "features": "Features",
+    "pricing": "Pricing",
+    "docs": "Docs",
+    "dashboard": "Dashboard",
+    "signIn": "Sign In",
+    "languages": {
+      "en": "English",
+      "zh": "中文",
+      "ja": "日本語",
+      "ko": "한국어",
+      "fr": "Français",
+      "de": "Deutsch",
+      "es": "Español"
+    }
+  },
+  "home": {
+    "badge": "✦ AI-Powered · Runs 100% in your browser",
+    "title1": "Remove Backgrounds",
+    "title2": "Instantly & Privately",
+    "subtitle": "No uploads. No servers. Your images never leave your device. Powered by ONNX Runtime — blazing fast.",
+    "tabEditor": "Editor",
+    "tabHistory": "History",
+    "labelOriginal": "Original",
+    "labelResult": "Result",
+    "clear": "Clear",
+    "dropTitle": "Drop your image here",
+    "dropBrowse": "or",
+    "dropBrowseLink": "browse files",
+    "dropFormats": "PNG · JPG · WEBP · up to 10MB",
+    "progressLabel": "Removing background…",
+    "resultPlaceholder": "Result will appear here",
+    "aiWorking": "AI is working…",
+    "download": "↓ Download PNG",
+    "featurePrivateTitle": "Fully Private",
+    "featurePrivateDesc": "Images never leave your device. Zero server uploads.",
+    "featureFastTitle": "Blazing Fast",
+    "featureFastDesc": "ONNX Runtime powers local AI inference. No wait time.",
+    "featureProTitle": "Pro Quality",
+    "featureProDesc": "State-of-the-art model. Hair, fur, complex edges — handled.",
+    "noteLabel": "Note:",
+    "noteText": "First run downloads the AI model (~50 MB). Subsequent runs are instant and fully offline."
+  },
+  "modal": {
+    "fileSizeTitle": "File Too Large",
+    "quotaTitle": "Quota Exhausted",
+    "close": "Close",
+    "signIn": "Sign In",
+    "upgrade": "Upgrade"
+  },
+  "features": {
+    "badge": "✦ Local AI · Fully Private · No Registration",
+    "title": "Why Choose BgRemover",
+    "subtitle": "Not just a background removal tool — fully local AI that protects your privacy while delivering professional quality.",
+    "ctaButton": "Start for Free →",
+    "useCasesTitle": "Use Cases",
+    "useCasesSubtitle": "From personal creation to enterprise batch processing, one tool handles it all",
+    "ctaSectionTitle": "Try It Free Now",
+    "ctaSectionSubtitle": "No registration required, 3 free uses per day. 10 per month after sign up.",
+    "ctaStart": "Start Now",
+    "ctaViewPricing": "View Pricing",
+    "featuresList": [
+      {
+        "icon": "🔒",
+        "title": "Fully Private, Zero Uploads",
+        "desc": "All AI processing runs locally in your browser via WebAssembly + ONNX Runtime. Images never leave your device — no server, no data collection, no privacy risk.",
+        "highlight": false
+      },
+      {
+        "icon": "⚡",
+        "title": "Blazing Fast",
+        "desc": "After a one-time ~50MB model download, all processing is completely offline. No waiting for uploads, queues, or server responses — speed depends on your device.",
+        "highlight": false
+      },
+      {
+        "icon": "✦",
+        "title": "Professional-Grade Quality",
+        "desc": "Powered by state-of-the-art AI models that precisely detect hair, fur, and complex edges. Portraits, products, animals, plants — all handled perfectly with transparent PNG output.",
+        "highlight": true
+      },
+      {
+        "icon": "📁",
+        "title": "Supports Common Formats",
+        "desc": "Accepts PNG, JPG, WEBP and other common image formats, always outputs transparent-background PNG ready for design, e-commerce, and social media.",
+        "highlight": false
+      },
+      {
+        "icon": "🖼️",
+        "title": "Full Resolution Output",
+        "desc": "Pro and above plans support original resolution output with no compression or quality loss. Free users get up to 1080p, sufficient for everyday use.",
+        "highlight": false
+      },
+      {
+        "icon": "📦",
+        "title": "Batch Processing",
+        "desc": "Pro supports 10 images per batch; Business supports 50 per batch — dramatically boosting productivity for e-commerce product photo workflows.",
+        "highlight": false
+      },
+      {
+        "icon": "🔗",
+        "title": "API Access",
+        "desc": "Business subscribers can integrate background removal into their own products or workflows via REST API, supporting automated batch processing.",
+        "highlight": false
+      },
+      {
+        "icon": "📱",
+        "title": "Cross-Platform Support",
+        "desc": "Browser-based, nothing to install. Works on Windows, macOS, Linux, iOS, and Android. Fully supported in Chrome, Safari, and Firefox.",
+        "highlight": false
+      }
+    ],
+    "useCasesList": [
+      { "title": "E-Commerce Products", "desc": "Instantly remove messy backgrounds to generate clean white or transparent product images and boost conversion.", "emoji": "🛍️" },
+      { "title": "Portrait & ID Photos", "desc": "Precisely detect hair edges to easily create ID photos, avatars, and social media profile pictures.", "emoji": "👤" },
+      { "title": "Design Assets", "desc": "Quickly extract design elements without Photoshop — export transparent PNG directly for design use.", "emoji": "🎨" },
+      { "title": "Content Creation", "desc": "Bloggers and video creators quickly process cover images and sticker assets to elevate content quality.", "emoji": "📸" }
+    ]
+  },
+  "pricing": {
+    "badge": "✦ Transparent Pricing, No Hidden Fees",
+    "title": "Choose Your Plan",
+    "subtitle": "Subscriptions for heavy users, credit packs for occasional or one-time needs. Both can be combined.",
+    "tabSubscription": "Subscription",
+    "tabCredits": "Credits",
+    "popularBadge": "✦ Most Popular",
+    "bestValueBadge": "✦ Best Value",
+    "subscriptionNote": "All subscriptions can be cancelled anytime · Auto-reverts to Free at end of period · Stackable with credit packs",
+    "creditsNote": "Credits never expire · Stackable with subscriptions · Subscription quota consumed first",
+    "creditsBanner": "✦ Credits never expire · Stack with subscriptions · Same file size/resolution as Pro",
+    "creditsUnit": "uses",
+    "faqTitle": "Frequently Asked Questions",
+    "buyButton": "Buy",
+    "redirecting": "Redirecting…",
+    "plans": [
+      {
+        "id": "free",
+        "name": "Free",
+        "price": "$0",
+        "period": "forever",
+        "desc": "For occasional use",
+        "cta": "Start Free",
+        "highlight": false,
+        "features": [
+          "10 uses / month",
+          "Files ≤ 5MB",
+          "Output up to 1080p",
+          "Browser-local processing (fully private)",
+          "PNG download"
+        ]
+      },
+      {
+        "id": "pro",
+        "name": "Pro",
+        "price": "$4.9",
+        "period": "/ month",
+        "desc": "For creators and freelancers",
+        "cta": "Upgrade to Pro",
+        "highlight": true,
+        "features": [
+          "200 uses / month",
+          "Files ≤ 25MB",
+          "Original resolution output",
+          "Browser-local processing (fully private)",
+          "PNG download",
+          "Batch processing (10 per batch)",
+          "History",
+          "Priority support"
+        ]
+      },
+      {
+        "id": "business",
+        "name": "Business",
+        "price": "$19.9",
+        "period": "/ month",
+        "desc": "For teams and power users",
+        "cta": "Contact Sales",
+        "highlight": false,
+        "features": [
+          "2,000 uses / month",
+          "Files ≤ 50MB",
+          "Original resolution output",
+          "Browser-local processing (fully private)",
+          "PNG download",
+          "Batch processing (50 per batch)",
+          "History",
+          "API access",
+          "Priority support"
+        ]
+      }
+    ],
+    "packs": [
+      { "id": "starter",      "name": "Starter",      "credits": 20,  "price": "$1.9",  "unitPrice": "$0.095/use", "highlight": false },
+      { "id": "standard",     "name": "Standard",     "credits": 60,  "price": "$4.9",  "unitPrice": "$0.082/use", "highlight": false },
+      { "id": "value",        "name": "Value",        "credits": 150, "price": "$9.9",  "unitPrice": "$0.066/use", "highlight": true  },
+      { "id": "professional", "name": "Professional", "credits": 400, "price": "$19.9", "unitPrice": "$0.050/use", "highlight": false }
+    ],
+    "faqs": [
+      {
+        "q": "What's the difference between credit packs and subscriptions?",
+        "a": "Subscriptions are billed monthly with quota resetting each month. Credit packs are a one-time purchase that never expire. They can be combined — once your subscription quota runs out, credits are consumed automatically so you're never hard-blocked."
+      },
+      {
+        "q": "Are my images uploaded to a server?",
+        "a": "No. All AI processing runs entirely in your browser locally (WebAssembly + ONNX Runtime). Images never leave your device."
+      },
+      {
+        "q": "Do credit packs really never expire?",
+        "a": "Yes, credit pack balances are permanently valid and unaffected by monthly resets. This is the core advantage of credits over subscriptions."
+      },
+      {
+        "q": "Can I cancel my subscription at any time?",
+        "a": "Yes, cancel anytime with no penalties. After cancellation, you can continue using the service until the end of the current billing period, then it automatically reverts to Free."
+      },
+      {
+        "q": "What is API access?",
+        "a": "Business subscribers can call the background removal function in bulk via REST API, suitable for integrating into your own products or workflows."
+      },
+      {
+        "q": "Is refund supported?",
+        "a": "Yes, 7-day no-questions-asked refund. Please contact support@imagebackgrounderaser.shop and we'll handle it within 24 hours."
+      }
+    ]
+  },
+  "docs": {
+    "badge": "✦ Documentation",
+    "title": "User Guide",
+    "subtitle": "Quick start guide, plan limits, and API reference.",
+    "section01": "01",
+    "section01Title": "Quick Start",
+    "section02": "02",
+    "section02Title": "Plan Limits",
+    "section03": "03",
+    "section03Title": "API Reference",
+    "section04": "04",
+    "section04Title": "Get Support",
+    "quickStart": [
+      { "step": "1", "title": "Open the Tool", "desc": "Visit the homepage — no registration or software installation required." },
+      { "step": "2", "title": "Upload Your Image", "desc": "Click the upload area or drag and drop an image. Supports PNG, JPG, and WEBP formats." },
+      { "step": "3", "title": "Wait for Processing", "desc": "The first use downloads a ~50MB AI model (one time only). Subsequent processing is fully offline, usually completing within seconds." },
+      { "step": "4", "title": "Download the Result", "desc": "Once processing is done, click \"Download PNG\" to save the transparent-background image." }
+    ],
+    "limitsTableHeaders": ["Plan", "Monthly Quota", "File Size", "Resolution", "Batch", "API"],
+    "limits": [
+      { "plan": "Guest",    "monthly": "3/day",   "fileSize": "≤ 2MB",  "resolution": "720p",     "batch": "—",       "api": "—" },
+      { "plan": "Free",     "monthly": "10/month", "fileSize": "≤ 5MB",  "resolution": "1080p",    "batch": "—",       "api": "—" },
+      { "plan": "Pro",      "monthly": "200/month","fileSize": "≤ 25MB", "resolution": "Original", "batch": "10/batch","api": "—" },
+      { "plan": "Business", "monthly": "2000/month","fileSize": "≤ 50MB","resolution": "Original", "batch": "50/batch","api": "✓" }
+    ],
+    "limitsNote": "Credit packs (never expire) stack with subscriptions — same file size/resolution as Pro.",
+    "limitsNoteLinkText": "View pricing →",
+    "apiNote": "API access is limited to",
+    "apiNotePlan": "Business",
+    "apiNoteText": "subscribers. Requests require a Session Cookie (obtained automatically after OAuth login).",
+    "apiResponseLabel": "Response",
+    "apiEndpoints": [
+      {
+        "method": "GET",
+        "path": "/api/usage",
+        "desc": "Query current usage and limits",
+        "response": "{\n  \"type\": \"user\",\n  \"plan\": \"business\",\n  \"monthly\": { \"used\": 12, \"limit\": 2000, \"remaining\": 1988 },\n  \"credits\": { \"balance\": 50 },\n  \"canProcess\": true,\n  \"maxFileSizeMB\": 50,\n  \"maxResolution\": 99999\n}"
+      },
+      {
+        "method": "POST",
+        "path": "/api/usage",
+        "desc": "Consume one processing quota (call after successful processing)",
+        "response": "{\n  \"ok\": true,\n  \"source\": \"monthly\",\n  \"remaining_monthly\": 1987\n}"
+      }
+    ],
+    "supportEmailTitle": "📧 Email Support",
+    "supportEmailDesc": "Have a question or feature request? Send us an email.",
+    "supportBillingTitle": "💳 Billing Issues",
+    "supportBillingDesc": "Refunds, upgrades, downgrades, and other billing questions.",
+    "supportBillingLink": "Go to Billing →"
+  },
+  "footer": {
+    "copyright": "© 2026 BgRemover",
+    "email": "support@imagebackgrounderaser.shop"
+  }
+}
