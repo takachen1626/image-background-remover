@@ -2,6 +2,20 @@
 
 import { useState } from 'react'
 
+async function startPayment(type: 'subscription' | 'credits', opts: { plan?: string; packId?: string }) {
+  const res = await fetch('/api/payment', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ type, ...opts }),
+  })
+  const data = await res.json() as { approveUrl?: string; error?: string }
+  if (data.approveUrl) {
+    window.location.href = data.approveUrl
+  } else {
+    alert(data.error || '支付服务暂时不可用，请稍后重试')
+  }
+}
+
 const subscriptionPlans = [
   {
     id: 'free',
@@ -99,6 +113,13 @@ const faqs = [
 
 export default function PricingClient() {
   const [tab, setTab] = useState<'subscription' | 'credits'>('subscription')
+  const [loading, setLoading] = useState<string | null>(null)
+
+  const handlePay = async (type: 'subscription' | 'credits', opts: { plan?: string; packId?: string }, id: string) => {
+    setLoading(id)
+    await startPayment(type, opts)
+    setLoading(null)
+  }
 
   return (
     <>
@@ -171,17 +192,24 @@ export default function PricingClient() {
                     </li>
                   ))}
                 </ul>
-                <a
-                  href={plan.ctaHref}
+                <button
+                  onClick={() => {
+                    if (plan.id === 'free') { window.location.href = '/'; return }
+                    if (plan.id === 'business') { window.location.href = 'mailto:support@imagebackgrounderaser.shop'; return }
+                    handlePay('subscription', { plan: plan.id }, `sub_${plan.id}`)
+                  }}
+                  disabled={loading === `sub_${plan.id}`}
                   className="block w-full py-3 rounded-xl text-sm font-medium text-center transition"
                   style={{
                     background: plan.highlight ? 'linear-gradient(135deg, #7c3aed, #4f46e5)' : 'rgba(255,255,255,0.06)',
                     color: 'white',
                     boxShadow: plan.highlight ? '0 4px 20px rgba(124,58,237,0.3)' : 'none',
+                    opacity: loading === `sub_${plan.id}` ? 0.6 : 1,
+                    cursor: loading === `sub_${plan.id}` ? 'wait' : 'pointer',
                   }}
                 >
-                  {plan.cta}
-                </a>
+                  {loading === `sub_${plan.id}` ? '跳转中…' : plan.cta}
+                </button>
               </div>
             ))}
           </div>
@@ -239,12 +267,13 @@ export default function PricingClient() {
                     background: pack.highlight ? 'linear-gradient(135deg, #7c3aed, #4f46e5)' : 'rgba(255,255,255,0.06)',
                     color: 'white',
                     boxShadow: pack.highlight ? '0 4px 20px rgba(124,58,237,0.3)' : 'none',
+                    opacity: loading === `pack_${pack.id}` ? 0.6 : 1,
+                    cursor: loading === `pack_${pack.id}` ? 'wait' : 'pointer',
                   }}
-                  onClick={() => {
-                    window.location.href = `/api/payment?action=create&type=credits&packId=${pack.id}`
-                  }}
+                  disabled={loading === `pack_${pack.id}`}
+                  onClick={() => handlePay('credits', { packId: pack.id }, `pack_${pack.id}`)}
                 >
-                  购买
+                  {loading === `pack_${pack.id}` ? '跳转中…' : '购买'}
                 </button>
               </div>
             ))}
